@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-2xl mx-auto p-6 bg-[#E0DA00] shadow-md rounded-md">
+
+  <div class="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-lg">
     <h2 class="text-2xl font-bold mb-4">Solicitar Frete</h2>
 
     <form @submit.prevent="avancarPedido">
@@ -62,11 +63,13 @@
     
     
 
-   </div>
+   </div> 
+   
+   <!-- Blocos lado a lado
    <div class="max-w-7xl mt-2 p-6 bg-yellow-400 shadow-md rounded-md">
-    <!-- Blocos lado a lado -->
+   
     <div v-if="resumo || fretesDisponiveis.length" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <!-- Resumo -->
+       Resumo 
       <div class="p-4 bg-gray-100 rounded text-sm leading-relaxed">
         <p><strong>Frete estimado:</strong>
           <span v-if="tipoFrete === 'mudanca'">A confirmar. Entraremos em contato.</span>
@@ -77,7 +80,7 @@
         <p><strong>Descrição:</strong> {{ descricaoCarga || '—' }}</p>
       </div>
 
-      <!-- Fretes disponíveis -->
+       Fretes disponíveis 
       <div class="p-4 bg-gray-50 rounded text-sm">
         <h4 class="font-semibold mb-2">Fretes disponíveis para agendamento:</h4>
         <ul class="list-disc pl-5 space-y-1">
@@ -87,7 +90,7 @@
         </ul>
       </div>
     </div>
-   </div class="max-w-7xl mx-auto p-6 bg-amber-100 shadow-md rounded-md">
+  </div>-->
 </template>
 
 <script setup>

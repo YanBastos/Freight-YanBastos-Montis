@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="m-3 rounded-4xl bg-[#DDDDDD] text-[#545454] py-4 px-6 flex justify-between items-center"
+    class="m-3 rounded-4xl bg-[#DDDDDD] text-[#151515] py-4 px-6 flex justify-between items-center"
   >
     <NuxtLink to="/" class="text-xl font-bold hover:text-[#000000]">LOGO</NuxtLink>
     <div class="flex gap-4 items-center">
@@ -8,7 +8,13 @@
         >Início</NuxtLink
       >
       <NuxtLink to="/sobre" class="hover:text-[#000000]" active-class="font-bold"
-        >Sobre</NuxtLink
+        >Simulação</NuxtLink
+      >
+      <NuxtLink to="/dashboard" class="hover:text-[#000000]" active-class="font-bold"
+        >Dashboard</NuxtLink
+      >
+      <NuxtLink to="/acess" class="hover:text-[#000000]" active-class="font-bold"
+        >Registro</NuxtLink
       >
 
       <!-- Menu de Conta -->
@@ -64,14 +70,14 @@
           <template v-else>
             <!-- Itens quando não logado -->
             <NuxtLink
-              to="/login"
+              to="/acess"
               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               @click.native="isAccountMenuOpen = false"
             >
               Login
             </NuxtLink>
             <NuxtLink
-              to="/registro"
+              to="/acess"
               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               @click.native="isAccountMenuOpen = false"
             >

@@ -1,6 +1,6 @@
 
 <template>
-<div class="flex min-h-screen">
+<div class="flex min-h-screen bg-gray-100">
      <!--texto inicio esquerda -->
   <div class="w-1/2 ">
 
